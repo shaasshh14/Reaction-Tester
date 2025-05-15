@@ -30,10 +30,10 @@ A vibrant and interactive **Reaction Time Testing App** built using HTML, CSS, a
 The project folder contains:
 
 - `README.md` — This file  
-- `index.html` — Main HTML page  
+- `index.html` — Main HTML page
+- `picture.png` — Preview image used in README  
 - `styles.css` — All the charming styling  
 - `script.js` — JS for shape timing, placement, and stats  
-- `picture.png` — Preview image used in README  
 
 ## 💻 Built With
 
