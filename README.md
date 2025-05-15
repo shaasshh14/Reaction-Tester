@@ -27,32 +27,33 @@ A vibrant and interactive **Reaction Time Testing App** built using HTML, CSS, a
 
 ## 📁 Folder Structure
 
-reaction-tester/
-├── index.html # Main HTML page
-├── styles.css # All the charming styling
-├── script.js # JS for shape timing, placement, and stats
-├── picture.png # Preview image used in README
-└── README.md
+The project folder contains:
+
+- `README.md` — This file  
+- `index.html` — Main HTML page  
+- `styles.css` — All the charming styling  
+- `script.js` — JS for shape timing, placement, and stats  
+- `picture.png` — Preview image used in README  
 
 ## 💻 Built With
 
-- **HTML5** – Semantic structure
-- **CSS3** – Animations, gradients, responsive design
-- **JavaScript** – Event handling, timing logic, DOM updates
+- **HTML5** – Semantic structure  
+- **CSS3** – Animations, gradients, responsive design  
+- **JavaScript** – Event handling, timing logic, DOM updates  
 
 ## 🧠 Learnings & Concepts
 
-- DOM manipulation
-- Handling dynamic layout without overlap
-- Smooth UI/UX design without alerts
-- Real-time performance tracking with average calculations
+- DOM manipulation  
+- Handling dynamic layout without overlap  
+- Smooth UI/UX design without alerts  
+- Real-time performance tracking with average calculations  
 
 ## 💡 Future Enhancements
 
-- Add sound feedback on shape click
-- Leaderboard for best reaction times
-- Switch between light/dark themes
-- Include difficulty modes or countdown rounds
+- Add sound feedback on shape click  
+- Leaderboard for best reaction times  
+- Switch between light/dark themes  
+- Include difficulty modes or countdown rounds  
 
 ## 🌐 Live Demo
 
