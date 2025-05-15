@@ -1,0 +1,84 @@
+body {
+    height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to bottom right, #f9f7f7, #a9c9ff);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    padding: 40px;
+    border-radius: 20px;
+    background: rgba(255, 255, 255, 0.85);
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 70%;
+}
+
+h1 {
+    font-size: 3rem;
+    color: #5e60ce;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.controls {
+    margin-bottom: 20px;
+}
+
+button {
+    padding: 12px 28px;
+    font-size: 1.1rem;
+    border: none;
+    border-radius: 10px;
+    background: #6930c3;
+    color: white;
+    cursor: pointer;
+    margin: 0 10px;
+    box-shadow: 0 5px 15px rgba(105, 48, 195, 0.3);
+    transition: 0.3s ease;
+}
+
+button:hover {
+    background: #5e60ce;
+}
+
+#reactionTimeDisplay {
+    font-size: 1.3rem;
+    margin-top: 10px;
+    color: #1b4332;
+    font-weight: bold;
+}
+
+#gameArea {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    margin-top: 20px;
+    border: 2px solid #333;
+    background-color: #f0f0f0;
+    overflow: hidden; 
+    border-radius: 10px;
+}
+
+#shape {
+    position: absolute;
+    display: none;
+    cursor: pointer;
+    border-radius: 15px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+    transition: all 0.25s ease-in-out;
+}
