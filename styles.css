@@ -7,11 +7,13 @@ body {
     justify-content: center;
     align-items: center;
     overflow: hidden;
+    padding: 2vh 2vw;
+    box-sizing: border-box;
 }
 
 .container {
     text-align: center;
-    padding: 40px;
+    padding: 4vh 5vw;
     border-radius: 20px;
     background: rgba(255, 255, 255, 0.85);
     box-shadow: 0 8px 30px rgba(0, 0, 0, 0.15);
@@ -20,36 +22,43 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 70%;
+    width: 100%;
+    max-width: 800px;
+    box-sizing: border-box;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: #5e60ce;
     margin-bottom: 10px;
 }
 
 p {
-    font-size: 1.1rem;
+    font-size: 1rem;
     color: #333;
     margin-bottom: 20px;
+    padding: 0 1vw;
 }
 
 .controls {
     margin-bottom: 20px;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
 }
 
 button {
-    padding: 12px 28px;
-    font-size: 1.1rem;
+    padding: 10px 24px;
+    font-size: 1rem;
     border: none;
     border-radius: 10px;
     background: #6930c3;
     color: white;
     cursor: pointer;
-    margin: 0 10px;
+    margin: 10px;
     box-shadow: 0 5px 15px rgba(105, 48, 195, 0.3);
     transition: 0.3s ease;
+    min-width: 120px;
 }
 
 button:hover {
@@ -57,7 +66,7 @@ button:hover {
 }
 
 #reactionTimeDisplay {
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     margin-top: 10px;
     color: #1b4332;
     font-weight: bold;
@@ -65,7 +74,8 @@ button:hover {
 
 #gameArea {
     width: 100%;
-    height: 600px;
+    max-width: 800px;
+    height: 50vh;
     position: relative;
     margin-top: 20px;
     border: 2px solid #333;
@@ -81,4 +91,41 @@ button:hover {
     border-radius: 15px;
     box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
     transition: all 0.25s ease-in-out;
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+
+    p, button {
+        font-size: 0.95rem;
+    }
+
+    #gameArea {
+        height: 45vh;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 4vh 4vw;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    button {
+        padding: 8px 20px;
+        font-size: 0.9rem;
+    }
+
+    #reactionTimeDisplay {
+        font-size: 1rem;
+    }
+
+    #gameArea {
+        height: 40vh;
+    }
 }

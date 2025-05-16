@@ -22,12 +22,16 @@ function getRandomColor() {
 
 function move() {
     if (!gameRunning) return;
-    const shapeSize = (Math.random() * 50) + 50;
-    const gameAreaSize = 600;
-    const left = Math.random() * (gameAreaSize - shapeSize);
-    const top = Math.random() * (gameAreaSize - shapeSize);
 
+    const shapeSize = (Math.random() * 30) + 20;
+    const areaRect = gameArea.getBoundingClientRect();
+    const maxLeft = areaRect.width - shapeSize;
+    const maxTop = areaRect.height - shapeSize;
+
+    const left = Math.random() * maxLeft;
+    const top = Math.random() * maxTop;
     const clr = getRandomColor();
+
     shape.style.left = left + "px";
     shape.style.top = top + "px";
     shape.style.width = shapeSize + "px";
